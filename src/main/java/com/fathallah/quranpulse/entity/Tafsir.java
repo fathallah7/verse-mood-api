@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "quran-tafsit-muyassar")
+@Table(name = "quran-tafsir-muyassar")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
