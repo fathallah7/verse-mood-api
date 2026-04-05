@@ -1,5 +1,6 @@
 package com.fathallah.quranpulse.controller;
 
+import com.fathallah.quranpulse.dto.ApiResponse;
 import com.fathallah.quranpulse.entity.Ayah;
 import com.fathallah.quranpulse.service.AyahService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,7 @@ public class AyahController {
     }
 
     @GetMapping("/{surahNumber}")
-    public List<Ayah> getAyahsBySurahNumber(@PathVariable Integer surahNumber) {
-        return ayahService.getAyahsBySurahNumber(surahNumber);
+    public ApiResponse<List<Ayah>> getAyahsBySurahNumber(@PathVariable Integer surahNumber) {
+        return ApiResponse.success("Ayahs retrieved successfully", ayahService.getAyahsBySurahNumber(surahNumber));
     }
 }
