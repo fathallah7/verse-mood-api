@@ -2,7 +2,6 @@ package com.fathallah.quranpulse.controller;
 
 import com.fathallah.quranpulse.dto.ApiResponse;
 import com.fathallah.quranpulse.dto.response.AyahResponse;
-import com.fathallah.quranpulse.entity.Ayah;
 import com.fathallah.quranpulse.service.AyahService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
